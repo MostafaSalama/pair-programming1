@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
@@ -11,11 +11,45 @@
     <p id="description">Survey about how you're using our products</p>
     <form id="survey-form">
       <label for="name" id="name-label">Your Name</label>
-      <input type="text" id="name" required placeholder="your name">
+      <input type="text" id="name" required placeholder="your name" />
       <label for="email" id="email-label">Your Email</label>
       <input type="email" id="email" required placeholder="your email" />
       <label for="number" id="number-label">Your Age(Optional)</label>
-      <input type="number" id="number" min="10" max="70" placeholder="your age">
+      <input
+        type="number"
+        id="number"
+        min="10"
+        max="70"
+        placeholder="your age"
+      />
+      <p>Choose your gender:</p>
+      <select id="dropdown">
+        <option selected disabled>Choose your gender:</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Non Binary">Non Binary</option>
+      </select>
+
+      <p>How do you see our services?</p>
+      <label
+        ><input value="great" type="radio" name="user choice" />Great</label
+      >
+      <label><input value="good" type="radio" name="user choice" />Good</label>
+
+      <label><input value="bad" type="radio" name="user choice" />Bad</label>
+
+      <p>What type of things you like about our company?</p>
+      <label
+        ><input value="customer service" type="checkbox" />customer
+        service</label
+      >
+      <label><input value="delivery time" type="checkbox" />delivery tim</label>
+      <label><input value="commitment" type="checkbox" />commitment</label>
+
+      <p>Add your suggestions:</p>
+      <textarea id="suggestions"></textarea>
+
+      <button id="submit" type="submit">Submit</button>
     </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
@@ -31,6 +65,6 @@
     - The freeCodeCamp Team
 
     -->
-    <script  src="js/index.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
